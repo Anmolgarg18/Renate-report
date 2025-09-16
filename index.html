@@ -48,8 +48,8 @@
     </div>
     <div class="space-x-2">
        <button onclick="downloadModel()" class="border px-4 py-2 text-sm rounded hover:bg-gray-100">Competency Model</button>
-      <!-- <button onclick="downloadPDF()" class="border px-4 py-2 text-sm rounded hover:bg-gray-100">Download as PDF</button>
-      <button class="bg-[#071D49] text-white px-4 py-2 text-sm rounded hover:bg-blue-700 disabled">Share Report</button> -->
+      <button onclick="downloadPDF()" class="border px-4 py-2 text-sm rounded hover:bg-gray-100">Download Report</button>
+      <!-- <button class="bg-[#071D49] text-white px-4 py-2 text-sm rounded hover:bg-blue-700 disabled">Share Report</button> -->
     </div>
   </header>
 
@@ -150,122 +150,22 @@
     <!-- learining -->
       <div class="mx-auto bg-white p-6 mt-5 rounded-lg shadow">
     <div class="flex justify-between items-center mb-1">
-      <h1 class="text-2xl font-bold text-[#071D49]">Your Learning Recommendations (For Illustration Only)</h1>
-      <button class="bg-[#071D49] text-white px-4 py-2 rounded hover:bg-blue-800 hidden">Select Team member</button>
+      <h1 class="text-2xl font-bold text-[#071D49]">Next Steps</h1>
+     
     </div>
-    <p class="mb-6  text-sm">
-      Based on the priorities identified from the assessment here are the top learning assets picked for you for self guided learning
-    </p>
+  <ol class="list-decimal list-inside text-sm text-gray-700 mb-6 space-y-2">
+  <li>Thoughtfully review your self-assessment and your manager's assessment.</li>
+  <li>Identify areas of development and discuss them with your manager.</li>
+  <li>
+    Create a plan for closing the gap, which can include:
+    <ol class="list-[lower-alpha] list-inside pl-6 mt-2 space-y-1">
+      <li>Modules from the Academy (speak to your Learning Partner or visit the Academy)</li>
+      <li>Courses outside of the Academy, including LDP or LinkedIn Learning</li>
+      <li>Special projects and development opportunities within the flow of work.</li>
+    </ol>
+  </li>
+</ol>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <!-- Column 1 -->
-      <div class="bg-white border rounded-lg shadow">
-        <div class="bg-[#071D49] text-white text-xl font-semibold p-3 rounded-t-lg">Personalized Content and Channel</div>
-        <p class="text-[#071D49] px-4 pt-2 font-medium">Priority 1</p>
-        <ul class="divide-y">
-          <li class="p-4 flex justify-between items-start">
-            <div>
-              <p class="font-medium">Strategic Leadership</p>
-              <p class="text-sm text-gray-600">Course  4 weeks</p>
-            </div>
-            <a href="#" class="text-[#071D49] underline text-sm">Click Here</a>
-          </li>
-          <li class="p-4 flex justify-between items-start">
-            <div>
-              <p class="font-medium">Leading Through Change</p>
-              <p class="text-sm text-gray-600">Video  45 min</p>
-            </div>
-            <a href="#" class="text-[#071D49] underline text-sm">Click Here</a>
-          </li>
-          <li class="p-4 flex justify-between items-start">
-            <div>
-              <p class="font-medium">Decision Making Workshop</p>
-              <p class="text-sm text-gray-600">Workshop  1 day</p>
-            </div>
-            <a href="#" class="text-[#071D49] underline text-sm">Click Here</a>
-          </li>
-          <li class="p-4 flex justify-between items-start">
-            <div>
-              <p class="font-medium">7 Habits of Effective Leaders</p>
-              <p class="text-sm text-gray-600">Book  320 pages</p>
-            </div>
-            <a href="#" class="text-[#071D49] underline text-sm">Click Here</a>
-          </li>
-        </ul>
-      </div>
-
-      <!-- Column 2 -->
-      <div class="bg-white border rounded-lg shadow">
-        <div class="bg-[#071D49] text-white text-xl font-semibold p-3 rounded-t-lg">Strategic Choices</div>
-        <p class="text-[#071D49] px-4 pt-2 font-medium">Priority 2</p>
-        <ul class="divide-y">
-          <li class="p-4 flex justify-between items-start">
-            <div>
-              <p class="font-medium">Data Analysis with Python</p>
-              <p class="text-sm text-gray-600">Course  6 weeks</p>
-            </div>
-            <a href="#" class="text-[#071D49] underline text-sm">Click Here</a>
-          </li>
-          <li class="p-4 flex justify-between items-start">
-            <div>
-              <p class="font-medium">Visualizing Data for Impact</p>
-              <p class="text-sm text-gray-600">Video  30 min</p>
-            </div>
-            <a href="#" class="text-[#071D49] underline text-sm">Click Here</a>
-          </li>
-          <li class="p-4 flex justify-between items-start">
-            <div>
-              <p class="font-medium">Advanced Excel Workshop</p>
-              <p class="text-sm text-gray-600">Workshop  4 hours</p>
-            </div>
-            <a href="#" class="text-[#071D49] underline text-sm">Click Here</a>
-          </li>
-          <li class="p-4 flex justify-between items-start">
-            <div>
-              <p class="font-medium">Storytelling with Data</p>
-              <p class="text-sm text-gray-600">Book  288 pages</p>
-            </div>
-            <a href="#" class="text-[#071D49] underline text-sm">Click Here</a>
-          </li>
-        </ul>
-      </div>
-
-      <!-- Column 3 -->
-      <div class="bg-white border rounded-lg shadow">
-        <div class="bg-[#071D49] text-white text-xl font-semibold p-3 rounded-t-lg">External Influence</div>
-        <p class="text-[#071D49] px-4 pt-2 font-medium">Priority 3</p>
-        <ul class="divide-y">
-          <li class="p-4 flex justify-between items-start">
-            <div>
-              <p class="font-medium">Business Communication</p>
-              <p class="text-sm text-gray-600">Course  3 weeks</p>
-            </div>
-            <a href="#" class="text-[#071D49] underline text-sm">Click Here</a>
-          </li>
-          <li class="p-4 flex justify-between items-start">
-            <div>
-              <p class="font-medium">The Art of Public Speaking</p>
-              <p class="text-sm text-gray-600">Video  1 hour</p>
-            </div>
-            <a href="#" class="text-[#071D49] underline text-sm">Click Here</a>
-          </li>
-          <li class="p-4 flex justify-between items-start">
-            <div>
-              <p class="font-medium">Email Communication</p>
-              <p class="text-sm text-gray-600">Workshop  2 hours</p>
-            </div>
-            <a href="#" class="text-[#071D49] underline text-sm">Click Here</a>
-          </li>
-          <li class="p-4 flex justify-between items-start">
-            <div>
-              <p class="font-medium">Crucial Conversations</p>
-              <p class="text-sm text-gray-600">Book  256 pages</p>
-            </div>
-            <a href="#" class="text-[#071D49] underline text-sm">Click Here</a>
-          </li>
-        </ul>
-      </div>
-    </div>
   </div>
     </div>
     <div id="detailed-view" class="hidden"> 
@@ -280,11 +180,11 @@
           score: '1.67/3',
           narrative: 'You apply a good understanding of profitability and planning processes in real-world scenarios. With deeper strategic exposure and a stronger investment mindset, you can enhance your influence on brand and business direction.',
           subcompetencies: [
-            { title: 'External Influences', score: '4/9', self: '1', manager: '0.8', selfWidth: '22%', managerWidth: '26.4%',feedback: 'You effectively integrate patient insights into support and communication strategies. By using Google Analytics and survey data, you’ve refined site engagement and addressed therapy-specific challenges, such as adapting the water bottle tool. Your attention to drop-off data and interviews shows a strong grasp of the patient journey and access dynamics.<br/>	To expand strategic impact, engage earlier with data and access partners to identify emerging trends and policy shifts. Use these forward-looking insights to guide 1-7-5 planning and shape brand responses to future risks and opportunities.' },
+            { title: 'External Influences', score: '4/9', self: '1', manager: '0.8', selfWidth: '33%', managerWidth: '26.4%',feedback: 'You effectively integrate patient insights into support and communication strategies. By using Google Analytics and survey data, you’ve refined site engagement and addressed therapy-specific challenges, such as adapting the water bottle tool. Your attention to drop-off data and interviews shows a strong grasp of the patient journey and access dynamics.<br/>	To expand strategic impact, engage earlier with data and access partners to identify emerging trends and policy shifts. Use these forward-looking insights to guide 1-7-5 planning and shape brand responses to future risks and opportunities.' },
             { title: 'Financial Acumen', score: '3/3', self: '1', manager: '0.9', selfWidth: '33%', managerWidth: '29.7%',feedback: '	You demonstrate sound budget ownership by managing project finances and making smart trade-offs, such as repurposing tools for the oncology water bottle project. This cost-conscious, patient-focused approach optimized resources and improved therapy onboarding, earning positive HCP feedback. Your ability to deliver value within constraints supports sustainable, impact-driven marketing.<br/>	To elevate your financial acumen, focus on forward-looking planning and ROI measurement. Partner with finance to anticipate variances, apply “test and learn” budgets, and use connected KPIs to guide strategic investment decisions across the brand.' },
             { title: 'Planning Approach', score: '1/3', self: '1', manager: '1.1', selfWidth: '33%', managerWidth: '36.3%',feedback: '	You show strong understanding of AbbVie’s planning processes through your oncology support program work—balancing data-driven trade-offs, budget limits, and feedback integration. Your use of Google Analytics and patient surveys demonstrates effective tool usage, while early cross-functional involvement and attention to compliance reflect a thoughtful, process-aligned approach to execution.<br/>	To deepen strategic impact, engage earlier in LBE and LRP cycles. Collaborate with data and finance teams to flag risks, model scenarios, and validate plans with early MLOR input to sharpen planning precision and influence direction.' },
             
-          ]
+          ]   
         },
         {logo: './images/Analysis.png',
           title: 'Analysis to Insights',
@@ -293,7 +193,7 @@
           subcompetencies: [
           { title: 'Patient and Customer Centricity', score: '1.5/3', self: '2', manager: '1.8', selfWidth: '66%', managerWidth: '59.4%',feedback: '	You effectively use both qualitative and quantitative data to improve outcomes, such as refining patient website engagement through Google Analytics and integrating survey insights into education tools. Your use of pre/post testing and prioritization based on real-world insights ensures resources are allocated meaningfully and patient needs are met with data-driven solutions.<br/>	To elevate impact, lead strategic segmentation efforts and coach teams on customer-focused planning. Champion advanced analytics and guide identification of key journey moments to embed patient centricity across functions.  ' },  
             { title: 'Data & Analytical Literacy', score: '2/3', self: '2', manager: '1.7', selfWidth: '66%', managerWidth: '56.1%',feedback: '	You use data analytics like Google Analytics and surveys effectively to evaluate marketing content and redesign tactics. Your ability to gather insights and incorporate changes that resonate better with the audience demonstrates analytical awareness and commitment to performance-driven improvement.<br/>	To expand your impact, lead cross-functional data strategy and build team capability. Promote shared KPI understanding, explore AI-driven insights, and coach others on data quality to embed analytics into brand planning more deeply.' },
-            { title: 'Data-Informed Decision Making', score: '3/3', self: '1', manager: '0.9', selfWidth: '29.7%', managerWidth: '29.7%',feedback: '	You show strong data orientation by using tools like Google Analytics and campaign surveys to refine patient support content. Your use of segmentation and real-time metrics reflects a continuous improvement mindset, while growing collaboration with analytics partners demonstrates your commitment to validating data quality and applying insights effectively to enhance engagement strategies.<br/>	To scale impact, lead broader adoption of predictive analytics and real-time feedback in campaign planning. Champion shared success benchmarks and embed data-driven thinking across teams to foster a culture of insight-led decision-making.' },
+            { title: 'Data-Informed Decision Making', score: '3/3', self: '1', manager: '0.9', selfWidth: '33%', managerWidth: '29.7%',feedback: '	You show strong data orientation by using tools like Google Analytics and campaign surveys to refine patient support content. Your use of segmentation and real-time metrics reflects a continuous improvement mindset, while growing collaboration with analytics partners demonstrates your commitment to validating data quality and applying insights effectively to enhance engagement strategies.<br/>	To scale impact, lead broader adoption of predictive analytics and real-time feedback in campaign planning. Champion shared success benchmarks and embed data-driven thinking across teams to foster a culture of insight-led decision-making.' },
             
           ]
         },
@@ -302,7 +202,7 @@
           score: '2.17/3',
           narrative: 'You develop compelling, cohesive brand narratives and guide portfolio-level strategy. Your strategic clarity and cross-brand vision ensure sustainable success in a competitive market.',
           subcompetencies: [
-          { title: 'Strategic Choices', score: '2/3', self: '1', manager: '0.9', selfWidth: '22%', managerWidth: '29.7%',feedback: '	You take a thoughtful approach to strategic decision-making, balancing feasibility and impact—such as repurposing assets for the oncology hydration tool. Your collaboration with cross-functional teams and patient associations ensured alignment with genuine needs, and your integration of behavioral insights reflects a patient-focused, data-informed mindset that supports brand strategy.<br/> To broaden your strategic influence, lead scenario planning and guide brand teams in evaluating behavioral trade-offs. Initiate early discussions on customer trends and partner cross-functionally to shape broader organizational implications during the 1-7-5 planning process.' },
+          { title: 'Strategic Choices', score: '2/3', self: '1', manager: '0.9', selfWidth: '33%', managerWidth: '29.7%',feedback: '	You take a thoughtful approach to strategic decision-making, balancing feasibility and impact—such as repurposing assets for the oncology hydration tool. Your collaboration with cross-functional teams and patient associations ensured alignment with genuine needs, and your integration of behavioral insights reflects a patient-focused, data-informed mindset that supports brand strategy.<br/> To broaden your strategic influence, lead scenario planning and guide brand teams in evaluating behavioral trade-offs. Initiate early discussions on customer trends and partner cross-functionally to shape broader organizational implications during the 1-7-5 planning process.' },
           { title: 'Lifecycle Optimization', score: '3/3', self: '1', manager: '0.8', selfWidth: '33%', managerWidth: '26.4%',feedback: '	You effectively use market research and analytics to address patient needs, as shown in your oncology hydration tool work—prioritizing it based on stakeholder input and repurposing assets. Your response to compliance gaps among young adults further reflects a patient-centric mindset that enhances brand relevance and supports key moments in the patient journey.<br/>	To scale impact, adopt a forward-looking lens by exploring 3–5-year brand evolution opportunities. Initiate planning around future claims, evidence needs, and cross-brand synergies to build a robust lifecycle strategy.' },
            { title: 'Compelling Brand Story', score: '2/3', self: '1', manager: '0.7', selfWidth: '33%', managerWidth: '23.1%',feedback: '	You show a thoughtful approach to audience understanding by using Google Analytics and patient surveys to shape communications. Your integration of HCP feedback into support tools reflects your strength in applying real-world insights to create resonant, effective messaging. This data-driven mindset supports meaningful content development and ongoing Brand Story refinement.<br/>	To enhance strategic storytelling, build a structured Brand Story framework linking key messages to competitive positioning. Partner with agencies and teams to track narrative risks, assess evolving trends, and ensure message consistency across campaigns.' },  
            
@@ -314,7 +214,7 @@
           narrative: 'You are a connector and integrator across functions, enabling unified execution. Your ability to lead alignment efforts across Brand Teams and external partners drives strategic cohesion.',
           subcompetencies: [
            { title: 'Matrix Working', score: '3/3', self: '1', manager: '0.7', selfWidth: '33%', managerWidth: '23.1%',feedback: '	You collaborate effectively with the Brand Team and cross-functional partners, as seen in your hydration support tool project. By engaging patient associations and aligning with internal stakeholders within budget constraints, you ensured inclusive, patient-centric solutions. Your awareness of internal dynamics and stakeholder needs supports consistent and aligned brand execution.<br/>	To expand your impact, proactively anticipate stakeholder reactions and competing priorities. Strengthen cross-functional insights, build broader internal networks, and engage earlier in strategy discussions to navigate complex matrix decisions with greater foresight and influence.' },
-           { title: 'Cross-Functional Collaboration', score: '3/3', self: '2', manager: '2.1', selfWidth: '77%', managerWidth: '69.3%',feedback: '	You demonstrate strong cross-functional collaboration, coordinating with the Brand Team, patient associations, and functional peers to develop tools like the hydration support material. Your inclusive approach ensures programs are informed by diverse perspectives, align with organizational standards, and enhance the patient experience. Sustaining this collaborative mindset will continue to strengthen your impact.<br/>	To deepen collaboration, engage the In-Field Team earlier to shape strategy and content. Use their insights to guide decisions and ensure messaging reflects real-world needs, supporting stronger execution across channels.' },
+           { title: 'Cross-Functional Collaboration', score: '3/3', self: '2', manager: '2.1', selfWidth: '66%', managerWidth: '69.3%',feedback: '	You demonstrate strong cross-functional collaboration, coordinating with the Brand Team, patient associations, and functional peers to develop tools like the hydration support material. Your inclusive approach ensures programs are informed by diverse perspectives, align with organizational standards, and enhance the patient experience. Sustaining this collaborative mindset will continue to strengthen your impact.<br/>	To deepen collaboration, engage the In-Field Team earlier to shape strategy and content. Use their insights to guide decisions and ensure messaging reflects real-world needs, supporting stronger execution across channels.' },
 { title: 'Agency Collaboration', score: '3/3', self: '1', manager: '0.6', selfWidth: '33%', managerWidth: '19.8%',feedback: '	You effectively manage agency deliverables by setting clear expectations, using data to guide decisions, and validating ideas with stakeholders. Anchoring creative work in customer insights and measurable KPIs ensures agency output remains focused, aligned to brand strategy, and responsive to audience needs—resulting in efficient, purposeful collaboration.<br/>	To elevate agency collaboration, engage earlier in the creative process. Co-create ideas, support strategic brainstorming, and offer feedback that balances brand goals with creative risk-taking to drive more dynamic, co-owned content development.' }
             
           ]
@@ -345,7 +245,7 @@
           narrative: 'You design data-driven journeys and deliver impactful experiences using analytics. Continue evolving your test-and-learn mindset and scaling personalization for greater value.',
           subcompetencies: [
             { title: 'Audience Targeting', score: '2/3', self: '1', manager: '0.8', selfWidth: '33%', managerWidth: '26.4%',feedback: '	You take a thoughtful, data-informed approach to identifying patient and physician needs, using survey inputs and user feedback to shape engagement. Your plan to pilot segmented email campaigns reflects a growing focus on personalization, and your awareness of content preferences across segments signals strong intent to enhance customer-centric experiences. Capturing learnings from these pilots will further strengthen your audience strategy.<br/>	To deepen targeting, shift from static segmentation to dynamic value pool prioritization. Collaborate with analytics partners, integrate adoption ladder data, and use real-time feedback to continuously refine segmentation and maximize campaign impact.' },
-            { title: 'Personalized Content and Channel', score: '1.5/3', self: '1', manager: '0.75', selfWidth: '22%', managerWidth: '24.75%',feedback: ' You show a thoughtful approach to personalized content by using Google Analytics and tagging to track performance, while applying patient insights to tailor support materials. Your focus on relevance and modular design improves the patient experience and reflects growing alignment between content strategy and user feedback.<br/>	To expand impact, apply content reuse strategies and tailor materials dynamically across segments. Coordinate messaging across channels, involve MLOR partners early, and collaborate with data teams to identify journey gaps and prioritize updates that boost efficiency and relevance.' },
+            { title: 'Personalized Content and Channel', score: '1.5/3', self: '1', manager: '0.75', selfWidth: '33%', managerWidth: '24.75%',feedback: ' You show a thoughtful approach to personalized content by using Google Analytics and tagging to track performance, while applying patient insights to tailor support materials. Your focus on relevance and modular design improves the patient experience and reflects growing alignment between content strategy and user feedback.<br/>	To expand impact, apply content reuse strategies and tailor materials dynamically across segments. Coordinate messaging across channels, involve MLOR partners early, and collaborate with data teams to identify journey gaps and prioritize updates that boost efficiency and relevance.' },
             { title: 'Customer Centric Experiences ', score: '2/3', self: '1', manager: '0.6', selfWidth: '33%', managerWidth: '19.8%',feedback: '	You apply a strong customer-focused approach by using Google Analytics and patient insights to improve experience touchpoints. Initiatives like the oncology water bottle and transition tools reflect your ability to develop support grounded in real-world data. Your segment-level thinking and tailored communication show a clear understanding of how to enhance engagement through both qualitative and quantitative insights.<br/>	To elevate impact, define customer journeys more fully by mapping stages, triggers, and cross-channel behaviors. Partner with analytics and channel teams to refine personalization, automate delivery, and enable real-time, data-informed engagement.' }
           ]
         }
@@ -373,22 +273,34 @@
             
 
             <!-- <h4 class="font-semibold text-gray-700 mb-4">Subcompetencies</h4> -->
-            <div class="grid md:grid-cols-3 gap-4">
-              <template x-for="(sub, i) in item.subcompetencies" :key="i">
-                <div class="bg-white rounded-lg border p-4 shadow-sm">
-                  <h5 class="font-semibold text-gray-800" x-text="sub.title"></h5>
-                  <!-- <p class="text-sm text-gray-600 font-medium" x-text="sub.score"></p> -->
-                  <div class="text-sm text-gray-600 mt-2">Self <span class="float-right"x-text="(+sub.self <= 1) ? 'Foundational' : (+sub.self < 2) ? 'Advanced' : (+sub.self < 3) ? 'Mastery' : 'Mastery'"></span></div>
-                  <div class="w-full h-2 bg-gray-200 rounded">
-                    <div class="bg-[#8A2ECC] h-2 rounded" :style="'width: ' + sub.selfWidth"></div>
-                  </div>
-                  <div class="text-sm text-gray-600 mt-2">Manager <span class="float-right"x-text="(+sub.manager <= 1) ? 'Foundational' : (+sub.manager < 2) ? 'Advanced' : (+sub.manager < 3) ? 'Mastery' : 'Mastery'"></span></div>
-                  <div class="w-full h-2 bg-gray-200 rounded">
-                    <div class="bg-[#071D49] h-2 rounded" :style="'width: ' + sub.managerWidth"></div>
-                  </div>
-                </div>
-              </template>
-            </div>
+         <div class="grid md:grid-cols-3 gap-4">
+  <template x-for="(sub, i) in item.subcompetencies" :key="i">
+    <div class="bg-white rounded-lg border p-4 shadow-sm">
+      <h5 class="font-semibold text-gray-800" x-text="sub.title"></h5>
+
+      <div class="text-sm text-gray-600 mt-2">Self </div>
+      <div class="w-full h-2 bg-gray-200 rounded relative">
+        <!-- Progress -->
+        <div class="bg-[#8A2ECC] h-2 rounded" :style="'width: ' + sub.selfWidth"></div>
+
+        <!-- Separators -->
+        <div class="absolute top-0 left-1/3 h-2 w-[2px] bg-white"></div>
+        <div class="absolute top-0 left-2/3 h-2 w-[2px] bg-white"></div>
+      </div>
+
+      <div class="text-sm text-gray-600 mt-2">Manager </div>
+      <div class="w-full h-2 bg-gray-200 rounded relative">
+        <!-- Progress -->
+        <div class="bg-[#071D49] h-2 rounded" :style="'width: ' + sub.managerWidth"></div>
+
+        <!-- Separators -->
+        <div class="absolute top-0 left-1/3 h-2 w-[2px] bg-white"></div>
+        <div class="absolute top-0 left-2/3 h-2 w-[2px] bg-white"></div>
+      </div>
+    </div>
+  </template>
+</div>
+
             <!-- <h4 class="font-semibold text-gray-700 mt-4 mb-2">Competency Feedback</h4>
             <p class="text-gray-300 mb-6" x-text="item.narrative"></p> -->
             <template x-for="sub in item.subcompetencies" :key="sub.title">
@@ -450,19 +362,21 @@
     }
 
     function downloadPDF() {
-      const element = document.getElementById("pdf-content");
-      const opt = { margin: 0.5, filename: 'Overall_Competency_Report.pdf', image: { type: 'jpeg', quality: 0.98 }, html2canvas: { scale: 2 }, jsPDF: { unit: 'in', format: [14, 12], orientation: 'portrait' } };
-      html2pdf().from(element).set(opt).save();
+      // const element = document.getElementById("pdf-content");
+      // const opt = { margin: 0.5, filename: 'Overall_Competency_Report.pdf', image: { type: 'jpeg', quality: 0.98 }, html2canvas: { scale: 2 }, jsPDF: { unit: 'in', format: [14, 12], orientation: 'portrait' } };
+      // html2pdf().from(element).set(opt).save();
+
+      alert("PDF download functionality is not implemented in this demo.");
     }
 
     const skillsData = [
-      { label: "BUSINESS & FINANCIAL ACUMEN", description: "Understanding the key forces and dynamics inside and outside AbbVie that guide all decisions.", self: 1, manager: 0.94, benchmark: 2 },
-      { label: "ANALYSIS TO INSIGHTS",description: "Gathering, analyzing and synthesizing data to generate impactful insights that drive action, deepen customer intimacy and fuel curiosity",  self: 1.3, manager: 1.58, benchmark: 2},
-      { label: "BRAND & PORTFOLIO VALUE",description: "Realizing the full potential of our brands and portfolios using a deep understanding of the market, competition, customers, and clinical value to build a compelling brand story and provide short- and long-term strategic direction",  self: 0.85, manager: 0.8, benchmark: 2.5 },
-      { label: "STAKEHOLDER ALIGNMENT",description: "Building strong relationships with internal stakeholders to exceed shared goals",  self: 1.4, manager: 0.8, benchmark: 2 },
-      { label: "EFFECTIVE STORYTELLING",description: "Inspiring action through compelling narratives that effectively convey value for key stakeholders,including customers, peers and leaders ",  self: 0.95, manager: 1.375, benchmark: 2.5 },
-      { label: "MARKET ACCESS",description: "Understanding market access key stakeholders economics and decision making to enable patient access",  self: 0.95, manager: 0.734, benchmark: 2 },
-      { label: "PERSONALIZED MARKETING",description: "Delivering highly tailored, compelling experiences using real-time data, advanced analytics and AI to reflect customers unique preferences and behaviors",  self: 0.85, manager: 0.65, benchmark: 2.5 },
+      { label: "BUSINESS & FINANCIAL ACUMEN", description: "Understanding the key forces and dynamics inside and outside AbbVie that guide all decisions.", self: 0.95, manager: 0.91, benchmark: 2 },
+      { label: "ANALYSIS TO INSIGHTS",description: "Gathering, analyzing and synthesizing data to generate impactful insights that drive action, deepen customer intimacy and fuel curiosity",  self: 1.6, manager: 1.46, benchmark: 2},
+      { label: "BRAND & PORTFOLIO VALUE",description: "Realizing the full potential of our brands and portfolios using a deep understanding of the market, competition, customers, and clinical value to build a compelling brand story and provide short- and long-term strategic direction",  self: 0.95, manager: 0.8, benchmark: 2.5 },
+      { label: "STAKEHOLDER ALIGNMENT",description: "Building strong relationships with internal stakeholders to exceed shared goals",  self: 1.3, manager: 1.13, benchmark: 2 },
+      { label: "EFFECTIVE STORYTELLING",description: "Inspiring action through compelling narratives that effectively convey value for key stakeholders,including customers, peers and leaders ",  self: 0.95, manager: 0.733, benchmark: 2.5 },
+      { label: "MARKET ACCESS",description: "Understanding market access key stakeholders economics and decision making to enable patient access",  self: 0.95, manager: 0.65, benchmark: 2 },
+      { label: "PERSONALIZED MARKETING",description: "Delivering highly tailored, compelling experiences using real-time data, advanced analytics and AI to reflect customers unique preferences and behaviors",  self: 0.95, manager: 0.72, benchmark: 2.5 },
     ];
 
     const strengths = [
